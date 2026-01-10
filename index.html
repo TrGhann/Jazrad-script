@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jazrad Script - Best Adopt Me Script 2026</title>
+    <meta name="description" content="Jazrad Script - The ultimate Adopt Me auto farm script. Download the best Roblox Adopt Me script for free. Auto farm, auto collect, and more!">
+    <meta name="keywords" content="adopt me script, roblox script, adopt me auto farm, jazrad script, roblox adopt me, best adopt me script">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(5deg); }
+        }
+
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 30px rgba(138, 43, 226, 0.6), 0 0 60px rgba(75, 0, 130, 0.4); }
+            50% { box-shadow: 0 0 50px rgba(138, 43, 226, 1), 0 0 100px rgba(75, 0, 130, 0.8); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+        }
+
+        @keyframes slideIn {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        body {
+            font-family: 'Fredoka', 'Segoe UI', sans-serif;
+            background: linear-gradient(-45deg, #1a1a2e, #0f1419, #1f1f3a, #16213e);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 3s infinite, float-star 20s linear infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+
+        @keyframes float-star {
+            0% { transform: translateY(0) translateX(0); }
+            100% { transform: translateY(-100vh) translateX(50px); }
+        }
+
+        .meteor {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: linear-gradient(90deg, #8B5CF6, transparent);
+            border-radius: 50%;
+        }
+
+        @keyframes meteor-fall {
+            0% {
+                transform: translateY(-100px) translateX(0) rotate(-45deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) translateX(-300px) rotate(-45deg);
+                opacity: 0;
+            }
+        }
+
+        .shooting-star {
+            position: absolute;
+            height: 2px;
+            background: linear-gradient(90deg, #FFFFFF, #8B5CF6, transparent);
+            border-radius: 50%;
+            animation: shoot linear;
+        }
+
+        @keyframes shoot {
+            0% {
+                transform: translateX(0) translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(-1000px) translateY(500px);
+                opacity: 0;
+            }
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: radial-gradient(circle, #C084FC, transparent);
+            border-radius: 50%;
+            animation: particle-float linear infinite;
+        }
+
+        @keyframes particle-float {
+            0% {
+                transform: translateY(100vh) scale(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) scale(1);
+                opacity: 0;
+            }
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            animation: slideIn 0.8s ease-out;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 40px;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(236, 72, 153, 0.15));
+            border-radius: 25px;
+            margin-bottom: 50px;
+            border: 3px solid #8B5CF6;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 60px rgba(139, 92, 246, 0.3);
+        }
+
+        .hub-screenshot {
+            max-width: 700px;
+            width: 100%;
+            border-radius: 20px;
+            border: 3px solid #8B5CF6;
+            box-shadow: 0 10px 40px rgba(139, 92, 246, 0.5);
+            margin: 30px auto;
+            display: block;
+            background: rgba(139, 92, 246, 0.1);
+            min-height: 400px;
+            object-fit: contain;
+        }
+
+        .screenshot-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .screenshot-link {
+            color: #C084FC;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            border: 2px solid #8B5CF6;
+            padding: 12px 25px;
+            border-radius: 15px;
+            display: inline-block;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .screenshot-link:hover {
+            background: rgba(139, 92, 246, 0.2);
+            transform: scale(1.05);
+        }
+
+        .emoji-icon {
+            display: none;
+        }
+
+        h1 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 4.5em;
+            background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #A855F7 100%);
+            background-size: 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            animation: gradient 4s ease infinite;
+            filter: drop-shadow(0 0 30px rgba(139, 92, 246, 0.6));
+        }
+
+        .tagline {
+            font-size: 1.4em;
+            color: #E0E0E0;
+            font-weight: 500;
+            text-shadow: none;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #8B5CF6, #EC4899);
+            padding: 15px 35px;
+            border-radius: 30px;
+            margin-top: 25px;
+            font-weight: 800;
+            font-size: 1em;
+            animation: pulse 2.5s ease-in-out infinite;
+            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.6);
+            letter-spacing: 2px;
+        }
+
+        .search-container {
+            display: none;
+        }
+
+        .script-card {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(236, 72, 153, 0.1));
+            border: 3px solid #8B5CF6;
+            border-radius: 25px;
+            padding: 50px;
+            transition: all 0.5s ease;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 15px 60px rgba(139, 92, 246, 0.4);
+            animation: slideIn 0.8s ease-out 0.2s both;
+        }
+
+        .script-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            border-color: #A855F7;
+            box-shadow: 0 25px 80px rgba(168, 85, 247, 0.6);
+        }
+
+        .script-card h2 {
+            background: linear-gradient(45deg, #8B5CF6, #C084FC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 25px;
+            font-size: 2.5em;
+            font-weight: 900;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .game-icon {
+            font-size: 1.2em;
+            filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.8));
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 35px 0;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+            border: 2px solid rgba(139, 92, 246, 0.4);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: 900;
+            background: linear-gradient(45deg, #8B5CF6, #C084FC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            color: #888;
+            font-size: 1em;
+            margin-top: 8px;
+            font-weight: 600;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .feature-item {
+            background: rgba(139, 92, 246, 0.15);
+            border: 2px solid #8B5CF6;
+            padding: 15px 25px;
+            border-radius: 30px;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .feature-item:hover {
+            background: rgba(139, 92, 246, 0.3);
+            transform: scale(1.08);
+            border-color: #A855F7;
+        }
+
+        .script-card p {
+            color: #e0e0e0;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+            line-height: 1.9;
+        }
+
+        .script-code {
+            background: #000000;
+            border: 3px solid #8B5CF6;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 1.05em;
+            color: #00ff00;
+            box-shadow: 0 0 40px rgba(139, 92, 246, 0.4), inset 0 0 20px rgba(139, 92, 246, 0.1);
+            position: relative;
+        }
+
+        .script-code::before {
+            content: '// PREMIUM SCRIPT';
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            color: #C084FC;
+            font-size: 0.9em;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(192, 132, 252, 0.8);
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #8B5CF6, #6366F1, #A855F7);
+            background-size: 200%;
+            color: white;
+            border: none;
+            padding: 22px 50px;
+            border-radius: 60px;
+            cursor: pointer;
+            font-size: 1.3em;
+            font-weight: 900;
+            transition: all 0.5s ease;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            box-shadow: 0 15px 40px rgba(139, 92, 246, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+            transition: all 0.5s ease;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 20px 50px rgba(168, 85, 247, 0.7);
+            background-position: right;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            margin-top: 50px;
+            font-size: 1.1em;
+        }
+
+        .notification {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background: linear-gradient(45deg, #8B5CF6, #6366F1);
+            color: white;
+            padding: 25px 45px;
+            border-radius: 60px;
+            font-weight: bold;
+            font-size: 1.2em;
+            opacity: 0;
+            transform: translateY(20px) scale(0.8);
+            transition: all 0.5s ease;
+            pointer-events: none;
+            box-shadow: 0 15px 40px rgba(139, 92, 246, 0.6);
+            z-index: 1000;
+        }
+
+        .notification.show {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5em; }
+            .script-card { padding: 30px; }
+            .stats { flex-direction: column; gap: 20px; }
+            .features { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+
+    <div class="container">
+        <header>
+            <h1>JAZRAD'S SCRIPT</h1>
+            <p class="tagline">Premium Adopt Me Script</p>
+            <div class="badge">⚡ TRUSTED BY 100K+ USERS ⚡</div>
+        </header>
+
+        <div class="search-container">
+            <input type="text" class="search-box" id="searchBox" placeholder="🔍 Search for scripts... (e.g., adopt me script)">
+        </div>
+
+        <div class="script-card" id="adoptMeCard">
+            <h2><span class="game-icon">🐾</span> Adopt Me Auto Farm</h2>
+            
+            <img src="https://i.imgur.com/rKaIKV0.png" alt="Jazrad Hub Interface" class="hub-screenshot">
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">100K+</div>
+                    <div class="stat-label">Downloads</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">⭐⭐⭐⭐⭐</div>
+                    <div class="stat-label">Rating</div>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature-item">✅ ProdigyX - AdoptMe Features</div>
+                <div class="feature-item">⚡ AutoFarm GingerBread</div>
+                <div class="feature-item">🛡️ Instant Hatch | Instant Mega Neon</div>
+                <div class="feature-item">🎨 Minigames Autofarm</div>
+                <div class="feature-item">🔥 GingerBread Farm</div>
+                <div class="feature-item">💎 Force Trading Scam Protection</div>
+                <div class="feature-item">🚀 Alternative Gingerbread Farm</div>
+                <div class="feature-item">🎯 Auto Complete Minigames</div>
+            </div>
+
+            <p>Dominate Adopt Me with Jazrad's Script Hub! Features include ProdigyX AdoptMe integration, instant egg hatching, instant mega neon making, auto gingerbread farming, minigames autofarm, and force trading scam protection. Get all the premium features in one powerful script!</p>
+
+            <div class="script-code">loadstring(game:HttpGet("https://raw.githubusercontent.com/jazzedd/JazradScript/refs/heads/main/Script"))()</div>
+            
+            <button class="btn" onclick="copyScript()">🚀 COPY SCRIPT NOW 🚀</button>
+        </div>
+
+        <footer>
+            <p>⚠️ Use responsibly | For educational purposes only</p>
+            <p>💜 Join thousands of satisfied users!</p>
+            <p>🎷 Jazrad's Script © 2026</p>
+        </footer>
+    </div>
+
+    <div class="notification" id="notification">✓ COPIED! Ready to dominate Adopt Me! 🔥</div>
+
+    <script>
+        // Create stars
+        const starsContainer = document.getElementById('stars');
+        
+        // Add twinkling stars
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.animationDelay = Math.random() * 3 + 's';
+            starsContainer.appendChild(star);
+        }
+
+        // Add meteors
+        function createMeteor() {
+            const meteor = document.createElement('div');
+            meteor.className = 'meteor';
+            meteor.style.left = Math.random() * 100 + '%';
+            meteor.style.top = '-100px';
+            meteor.style.width = (Math.random() * 100 + 50) + 'px';
+            meteor.style.height = '2px';
+            meteor.style.animation = `meteor-fall ${Math.random() * 2 + 2}s linear`;
+            starsContainer.appendChild(meteor);
+
+            setTimeout(() => meteor.remove(), 4000);
+        }
+
+        setInterval(createMeteor, 3000);
+
+        // Add shooting stars
+        function createShootingStar() {
+            const shootingStar = document.createElement('div');
+            shootingStar.className = 'shooting-star';
+            shootingStar.style.left = Math.random() * 50 + 50 + '%';
+            shootingStar.style.top = Math.random() * 50 + '%';
+            shootingStar.style.width = (Math.random() * 150 + 100) + 'px';
+            shootingStar.style.animationDuration = (Math.random() * 1 + 1.5) + 's';
+            starsContainer.appendChild(shootingStar);
+
+            setTimeout(() => shootingStar.remove(), 3000);
+        }
+
+        setInterval(createShootingStar, 5000);
+
+        // Add floating particles
+        for (let i = 0; i < 30; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+            particle.style.animationDelay = Math.random() * 5 + 's';
+            starsContainer.appendChild(particle);
+        }
+
+        // Search functionality
+        const searchBox = document.getElementById('searchBox');
+        const adoptMeCard = document.getElementById('adoptMeCard');
+
+        searchBox.addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            
+            if (searchTerm === '' || searchTerm.includes('adopt') || searchTerm.includes('me') || searchTerm.includes('script')) {
+                adoptMeCard.classList.remove('hidden');
+            } else {
+                adoptMeCard.classList.add('hidden');
+            }
+        });
+
+        function copyScript() {
+            const codeElement = document.querySelector('.script-code');
+            const code = codeElement.textContent;
+
+            navigator.clipboard.writeText(code).then(() => {
+                showNotification();
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+                alert('Failed to copy. Please copy manually.');
+            });
+        }
+
+        function showNotification() {
+            const notification = document.getElementById('notification');
+            notification.classList.add('show');
+            
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
