@@ -3,732 +3,872 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jazrad Script - Best Adopt Me Script 2026 | Free Roblox Auto Farm</title>
-    <meta name="description" content="Jazrad Script - The ultimate Adopt Me auto farm script. Download the best Roblox Adopt Me script for free. Auto farm, auto collect, instant hatch, mega neon maker, and more! Trusted by 100K+ users.">
-    <meta name="keywords" content="adopt me script, roblox script, adopt me auto farm, jazrad script, roblox adopt me, best adopt me script, adopt me hack, adopt me autofarm, adopt me script pastebin, roblox adopt me script 2026">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Jazrad Script - Best Adopt Me Script 2026">
-    <meta property="og:description" content="The ultimate Adopt Me auto farm script. Download the best Roblox Adopt Me script for free!">
-    <meta property="og:image" content="https://i.imgur.com/rKaIKV0.png">
-    <meta property="og:url" content="https://trghann.github.io/Jazrad-script/">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Jazrad Script - Best Adopt Me Script 2026">
-    <meta name="twitter:description" content="The ultimate Adopt Me auto farm script. Free download!">
-    <meta name="twitter:image" content="https://i.imgur.com/rKaIKV0.png">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://trghann.github.io/Jazrad-script/">
-    
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Jazrad Script - Adopt Me Auto Farm",
-      "applicationCategory": "GameApplication",
-      "operatingSystem": "Roblox",
-      "description": "Premium Adopt Me script with auto farm, instant hatching, and scam protection features",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "85000"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "Jazrad Script"
-      }
-    }
-    </script>
-    
+    <title>TempMail Pro</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-30px) rotate(5deg); }
-        }
-
-        @keyframes glow {
-            0%, 100% { box-shadow: 0 0 30px rgba(138, 43, 226, 0.6), 0 0 60px rgba(75, 0, 130, 0.4); }
-            50% { box-shadow: 0 0 50px rgba(138, 43, 226, 1), 0 0 100px rgba(75, 0, 130, 0.8); }
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.08); }
-        }
-
-        @keyframes slideIn {
-            0% { opacity: 0; transform: translateY(50px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
         body {
-            font-family: 'Fredoka', 'Segoe UI', sans-serif;
-            background: linear-gradient(-45deg, #1a1a2e, #0f1419, #1f1f3a, #16213e);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-            color: #ffffff;
-            line-height: 1.6;
-            min-height: 100vh;
-            padding: 20px;
-            overflow-x: hidden;
-        }
-
-        .stars {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .star {
-            position: absolute;
-            width: 2px;
-            height: 2px;
-            background: white;
-            border-radius: 50%;
-            animation: twinkle 3s infinite, float-star 20s linear infinite;
-        }
-
-        @keyframes twinkle {
-            0%, 100% { opacity: 0; }
-            50% { opacity: 1; }
-        }
-
-        @keyframes float-star {
-            0% { transform: translateY(0) translateX(0); }
-            100% { transform: translateY(-100vh) translateX(50px); }
-        }
-
-        .meteor {
-            position: absolute;
-            width: 2px;
-            height: 2px;
-            background: linear-gradient(90deg, #8B5CF6, transparent);
-            border-radius: 50%;
-        }
-
-        @keyframes meteor-fall {
-            0% {
-                transform: translateY(-100px) translateX(0) rotate(-45deg);
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(100vh) translateX(-300px) rotate(-45deg);
-                opacity: 0;
-            }
-        }
-
-        .shooting-star {
-            position: absolute;
-            height: 2px;
-            background: linear-gradient(90deg, #FFFFFF, #8B5CF6, transparent);
-            border-radius: 50%;
-            animation: shoot linear;
-        }
-
-        @keyframes shoot {
-            0% {
-                transform: translateX(0) translateY(0);
-                opacity: 1;
-            }
-            100% {
-                transform: translateX(-1000px) translateY(500px);
-                opacity: 0;
-            }
-        }
-
-        .particle {
-            position: absolute;
-            width: 4px;
-            height: 4px;
-            background: radial-gradient(circle, #C084FC, transparent);
-            border-radius: 50%;
-            animation: particle-float linear infinite;
-        }
-
-        @keyframes particle-float {
-            0% {
-                transform: translateY(100vh) scale(0);
-                opacity: 0;
-            }
-            10% {
-                opacity: 1;
-            }
-            90% {
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(-100px) scale(1);
-                opacity: 0;
-            }
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-            animation: slideIn 0.8s ease-out;
-        }
-
-        header {
-            text-align: center;
-            padding: 60px 40px;
-            background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(236, 72, 153, 0.15));
-            border-radius: 25px;
-            margin-bottom: 50px;
-            border: 3px solid #8B5CF6;
-            position: relative;
-            backdrop-filter: blur(20px);
-            box-shadow: 0 0 60px rgba(139, 92, 246, 0.3);
-        }
-
-        .hub-screenshot {
-            max-width: 700px;
-            width: 100%;
-            border-radius: 20px;
-            border: 3px solid #8B5CF6;
-            box-shadow: 0 10px 40px rgba(139, 92, 246, 0.5);
-            margin: 30px auto;
-            display: block;
-            background: rgba(139, 92, 246, 0.1);
-            min-height: 400px;
-            object-fit: contain;
-        }
-
-        .screenshot-container {
-            text-align: center;
-            margin: 30px 0;
-        }
-
-        .screenshot-link {
-            color: #C084FC;
-            text-decoration: none;
-            font-size: 1.1em;
-            font-weight: 600;
-            border: 2px solid #8B5CF6;
-            padding: 12px 25px;
-            border-radius: 15px;
-            display: inline-block;
-            margin-top: 15px;
-            transition: all 0.3s ease;
-        }
-
-        .screenshot-link:hover {
-            background: rgba(139, 92, 246, 0.2);
-            transform: scale(1.05);
-        }
-
-        .emoji-icon {
-            display: none;
-        }
-
-        h1 {
-            font-family: 'Fredoka', sans-serif;
-            font-size: 4.5em;
-            background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #A855F7 100%);
-            background-size: 200%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 15px;
-            font-weight: 700;
-            letter-spacing: 3px;
-            animation: gradient 4s ease infinite;
-            filter: drop-shadow(0 0 30px rgba(139, 92, 246, 0.6));
-        }
-
-        .tagline {
-            font-size: 1.4em;
-            color: #E0E0E0;
-            font-weight: 500;
-            text-shadow: none;
-            margin-bottom: 20px;
-            letter-spacing: 2px;
-        }
-
-        .badge {
-            display: inline-block;
-            background: linear-gradient(135deg, #8B5CF6, #EC4899);
-            padding: 15px 35px;
-            border-radius: 30px;
-            margin-top: 25px;
-            font-weight: 800;
-            font-size: 1em;
-            animation: pulse 2.5s ease-in-out infinite;
-            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.6);
-            letter-spacing: 2px;
-        }
-
-        .search-container {
-            display: none;
-        }
-
-        .seo-section {
-            background: rgba(139, 92, 246, 0.1);
-            padding: 40px;
-            border-radius: 20px;
-            margin-bottom: 30px;
-            border: 2px solid #8B5CF6;
-            backdrop-filter: blur(10px);
-        }
-
-        .seo-section h2 {
-            color: #C084FC;
-            font-size: 2em;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        .seo-section p {
-            color: #e0e0e0;
-            font-size: 1.1em;
-            line-height: 1.8;
-            margin-bottom: 15px;
-        }
-
-        .faq-item {
-            margin-bottom: 25px;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.3);
-            border-radius: 15px;
-            border-left: 4px solid #8B5CF6;
-        }
-
-        .faq-item h3 {
-            color: #A855F7;
-            font-size: 1.4em;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .faq-item p {
-            color: #e0e0e0;
-            line-height: 1.7;
-        }
-
-        .script-card {
-            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(236, 72, 153, 0.1));
-            border: 3px solid #8B5CF6;
-            border-radius: 25px;
-            padding: 50px;
-            transition: all 0.5s ease;
-            backdrop-filter: blur(20px);
-            box-shadow: 0 15px 60px rgba(139, 92, 246, 0.4);
-            animation: slideIn 0.8s ease-out 0.2s both;
-        }
-
-        .script-card:hover {
-            transform: translateY(-15px) scale(1.02);
-            border-color: #A855F7;
-            box-shadow: 0 25px 80px rgba(168, 85, 247, 0.6);
-        }
-
-        .script-card h2 {
-            background: linear-gradient(45deg, #8B5CF6, #C084FC);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 25px;
-            font-size: 2.5em;
-            font-weight: 900;
-            text-transform: uppercase;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .game-icon {
-            font-size: 1.2em;
-            filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.8));
-        }
-
-        .stats {
-            display: flex;
-            justify-content: space-around;
-            margin: 35px 0;
-            padding: 25px;
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 20px;
-            border: 2px solid rgba(139, 92, 246, 0.4);
-        }
-
-        .stat-item {
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 2.5em;
-            font-weight: 900;
-            background: linear-gradient(45deg, #8B5CF6, #C084FC);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .stat-label {
-            color: #888;
-            font-size: 1em;
-            margin-top: 8px;
-            font-weight: 600;
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-
-        .feature-item {
-            background: rgba(139, 92, 246, 0.15);
-            border: 2px solid #8B5CF6;
-            padding: 15px 25px;
-            border-radius: 30px;
-            font-size: 1em;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            transition: all 0.3s ease;
-            font-weight: 600;
-        }
-
-        .feature-item:hover {
-            background: rgba(139, 92, 246, 0.3);
-            transform: scale(1.08);
-            border-color: #A855F7;
-        }
-
-        .script-card p {
-            color: #e0e0e0;
-            margin-bottom: 30px;
-            font-size: 1.2em;
-            line-height: 1.9;
-        }
-
-        .script-code {
-            background: #000000;
-            border: 3px solid #8B5CF6;
-            border-radius: 15px;
-            padding: 30px;
-            margin: 30px 0;
-            overflow-x: auto;
-            font-family: 'Courier New', monospace;
-            font-size: 1.05em;
-            color: #00ff00;
-            box-shadow: 0 0 40px rgba(139, 92, 246, 0.4), inset 0 0 20px rgba(139, 92, 246, 0.1);
-            position: relative;
-        }
-
-        .script-code::before {
-            content: '// PREMIUM SCRIPT';
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            color: #C084FC;
-            font-size: 0.9em;
-            font-weight: bold;
-            text-shadow: 0 0 10px rgba(192, 132, 252, 0.8);
-        }
-
-        .btn {
-            background: linear-gradient(45deg, #8B5CF6, #6366F1, #A855F7);
-            background-size: 200%;
-            color: white;
-            border: none;
-            padding: 22px 50px;
-            border-radius: 60px;
-            cursor: pointer;
-            font-size: 1.3em;
-            font-weight: 900;
-            transition: all 0.5s ease;
-            width: 100%;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            box-shadow: 0 15px 40px rgba(139, 92, 246, 0.5);
-            position: relative;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            height: 100vh;
             overflow: hidden;
         }
 
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.3);
-            transition: all 0.5s ease;
+        .container {
+            display: flex;
+            height: 100vh;
         }
 
-        .btn:hover::before {
-            left: 100%;
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background: #fff;
+            border-right: 1px solid #e0e0e0;
+            display: flex;
+            flex-direction: column;
         }
 
-        .btn:hover {
-            transform: scale(1.08);
-            box-shadow: 0 20px 50px rgba(168, 85, 247, 0.7);
-            background-position: right;
-        }
-
-        .btn:active {
-            transform: scale(0.98);
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px;
-            color: #666;
-            margin-top: 50px;
-            font-size: 1.1em;
-        }
-
-        .notification {
-            position: fixed;
-            bottom: 40px;
-            right: 40px;
-            background: linear-gradient(45deg, #8B5CF6, #6366F1);
-            color: white;
-            padding: 25px 45px;
-            border-radius: 60px;
+        .logo {
+            padding: 20px;
+            font-size: 24px;
             font-weight: bold;
-            font-size: 1.2em;
-            opacity: 0;
-            transform: translateY(20px) scale(0.8);
-            transition: all 0.5s ease;
-            pointer-events: none;
-            box-shadow: 0 15px 40px rgba(139, 92, 246, 0.6);
-            z-index: 1000;
+            color: #1a73e8;
+            border-bottom: 1px solid #e0e0e0;
         }
 
-        .notification.show {
-            opacity: 1;
-            transform: translateY(0) scale(1);
+        .compose-btn {
+            margin: 20px;
+            padding: 12px 24px;
+            background: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 24px;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
         }
 
-        .hidden {
+        .compose-btn:hover {
+            background: #1557b0;
+            box-shadow: 0 2px 8px rgba(26, 115, 232, 0.3);
+        }
+
+        .nav-items {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .nav-item {
+            padding: 12px 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #5f6368;
+            transition: background 0.2s;
+        }
+
+        .nav-item:hover {
+            background: #f5f5f5;
+        }
+
+        .nav-item.active {
+            background: #e8f0fe;
+            color: #1a73e8;
+            border-right: 3px solid #1a73e8;
+        }
+
+        .nav-item .icon {
+            width: 20px;
+            text-align: center;
+        }
+
+        .nav-item .count {
+            margin-left: auto;
+            font-size: 12px;
+            color: #5f6368;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+        }
+
+        .header {
+            padding: 16px 24px;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .search-box {
+            flex: 1;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px 40px 10px 16px;
+            border: 1px solid #e0e0e0;
+            border-radius: 24px;
+            background: #f5f5f5;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .search-box input:focus {
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .temp-email-section {
+            padding: 16px 24px;
+            background: #e8f0fe;
+            border-bottom: 1px solid #c2dbff;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .temp-email-display {
+            flex: 1;
+            padding: 10px 16px;
+            background: white;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 14px;
+            color: #1a73e8;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: #1a73e8;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1557b0;
+        }
+
+        .btn-secondary {
+            background: #fff;
+            color: #1a73e8;
+            border: 1px solid #1a73e8;
+        }
+
+        .btn-secondary:hover {
+            background: #e8f0fe;
+        }
+
+        .email-list {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .email-item {
+            padding: 16px 24px;
+            border-bottom: 1px solid #e0e0e0;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: flex;
+            gap: 16px;
+        }
+
+        .email-item:hover {
+            background: #f5f5f5;
+        }
+
+        .email-item.unread {
+            background: #f0f4ff;
+        }
+
+        .email-checkbox {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .email-content {
+            flex: 1;
+        }
+
+        .email-sender {
+            font-weight: 600;
+            color: #202124;
+            margin-bottom: 4px;
+        }
+
+        .email-subject {
+            color: #202124;
+            margin-bottom: 4px;
+        }
+
+        .email-preview {
+            color: #5f6368;
+            font-size: 13px;
+        }
+
+        .email-time {
+            color: #5f6368;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        /* Compose Modal */
+        .modal {
             display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
         }
 
-        @media (max-width: 768px) {
-            h1 { font-size: 2.5em; }
-            .script-card { padding: 30px; }
-            .seo-section { padding: 25px; }
-            .stats { flex-direction: column; gap: 20px; }
-            .features { grid-template-columns: 1fr; }
+        .modal.active {
+            display: flex;
+        }
+
+        .compose-window {
+            background: white;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 700px;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+
+        .compose-header {
+            padding: 16px 24px;
+            background: #f5f5f5;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .compose-header h3 {
+            color: #202124;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #5f6368;
+            padding: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            transition: background 0.2s;
+        }
+
+        .close-btn:hover {
+            background: #e0e0e0;
+        }
+
+        .compose-body {
+            padding: 0 24px;
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .compose-field {
+            padding: 12px 0;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            gap: 12px;
+        }
+
+        .compose-field label {
+            color: #5f6368;
+            min-width: 60px;
+        }
+
+        .compose-field input,
+        .compose-field textarea {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-family: inherit;
+            font-size: 14px;
+        }
+
+        .compose-field textarea {
+            min-height: 300px;
+            resize: vertical;
+        }
+
+        .compose-footer {
+            padding: 16px 24px;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            gap: 12px;
+        }
+
+        .send-btn {
+            padding: 10px 24px;
+            background: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .send-btn:hover {
+            background: #1557b0;
+        }
+
+        /* Email View */
+        .email-view {
+            display: none;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .email-view.active {
+            display: flex;
+        }
+
+        .email-view-header {
+            padding: 24px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .email-view-subject {
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+
+        .email-view-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #5f6368;
+            font-size: 14px;
+        }
+
+        .email-view-body {
+            flex: 1;
+            padding: 24px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+
+        .back-btn {
+            padding: 8px 16px;
+            background: #f5f5f5;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 16px;
+        }
+
+        .back-btn:hover {
+            background: #e0e0e0;
+        }
+
+        .empty-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: #5f6368;
+        }
+
+        .empty-state-icon {
+            font-size: 64px;
+            margin-bottom: 16px;
+        }
+
+        .timer {
+            display: inline-block;
+            padding: 4px 8px;
+            background: #fff3cd;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #856404;
         }
     </style>
 </head>
 <body>
-    <div class="stars" id="stars"></div>
-
     <div class="container">
-        <header>
-            <h1>JAZRAD'S SCRIPT</h1>
-            <p class="tagline">Premium Adopt Me Script</p>
-            <div class="badge">⚡ TRUSTED BY 85K+ USERS ⚡</div>
-        </header>
-
-        <!-- SEO Content Section -->
-        <section class="seo-section">
-            <h2>Why Jazrad Script is the Best Adopt Me Script in 2026</h2>
-            <p>Looking for a reliable <strong>Adopt Me script</strong>? Jazrad Script is the most trusted <strong>Adopt Me auto farm script</strong> available for Roblox in 2026. Our premium <strong>Roblox Adopt Me script</strong> includes advanced features like instant egg hatching, mega neon creation, gingerbread farming, and complete minigame automation.</p>
-            <p>Whether you're searching for an <strong>Adopt Me hack</strong>, <strong>Adopt Me autofarm</strong>, or a reliable <strong>Adopt Me script pastebin</strong> alternative, Jazrad Script delivers unmatched performance and security. With over 85,000 satisfied users, we're one of the top choices for serious Adopt Me players.</p>
-            <p>Our script works seamlessly with all major Roblox executors and includes built-in scam protection to keep your account safe. Download the best free Adopt Me script today and dominate the game!</p>
-        </section>
-
-        <div class="script-card" id="adoptMeCard">
-            <h2><span class="game-icon">🐾</span> Adopt Me Auto Farm</h2>
-            
-            <img src="https://i.imgur.com/rKaIKV0.png" alt="Jazrad Script Hub Interface - Best Adopt Me Script GUI" class="hub-screenshot">
-            
-            <div class="stats">
-                <div class="stat-item">
-                    <div class="stat-number">85K+</div>
-                    <div class="stat-label">Downloads</div>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">📧 TempMail Pro</div>
+            <button class="compose-btn" onclick="openCompose()">
+                <span>✏️</span> Compose
+            </button>
+            <div class="nav-items">
+                <div class="nav-item active" data-view="inbox" onclick="switchView('inbox')">
+                    <span class="icon">📥</span>
+                    <span>Inbox</span>
+                    <span class="count" id="inbox-count">0</span>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number">96%</div>
-                    <div class="stat-label">Success Rate</div>
+                <div class="nav-item" data-view="sent" onclick="switchView('sent')">
+                    <span class="icon">📤</span>
+                    <span>Sent</span>
+                    <span class="count" id="sent-count">0</span>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number">⭐⭐⭐⭐⭐</div>
-                    <div class="stat-label">Rating</div>
+                <div class="nav-item" data-view="drafts" onclick="switchView('drafts')">
+                    <span class="icon">📝</span>
+                    <span>Drafts</span>
+                    <span class="count" id="drafts-count">0</span>
+                </div>
+                <div class="nav-item" data-view="trash" onclick="switchView('trash')">
+                    <span class="icon">🗑️</span>
+                    <span>Trash</span>
+                    <span class="count" id="trash-count">0</span>
+                </div>
+                <div class="nav-item" data-view="spam" onclick="switchView('spam')">
+                    <span class="icon">⚠️</span>
+                    <span>Spam</span>
+                    <span class="count" id="spam-count">0</span>
                 </div>
             </div>
-
-            <div class="features">
-                <div class="feature-item">✅ ProdigyX - AdoptMe Features</div>
-                <div class="feature-item">⚡ AutoFarm GingerBread</div>
-                <div class="feature-item">🛡️ Instant Hatch | Instant Mega Neon</div>
-                <div class="feature-item">🎨 Minigames Autofarm</div>
-                <div class="feature-item">🔥 GingerBread Farm</div>
-                <div class="feature-item">💎 Force Trading Scam Protection</div>
-                <div class="feature-item">🚀 Alternative Gingerbread Farm</div>
-                <div class="feature-item">🎯 Auto Complete Minigames</div>
-            </div>
-
-            <p>Dominate Adopt Me with Jazrad's Script Hub! Features include ProdigyX AdoptMe integration, instant egg hatching, instant mega neon making, auto gingerbread farming, minigames autofarm, and force trading scam protection. Get all the premium features in one powerful script!</p>
-
-            <div class="script-code">loadstring(game:HttpGet("https://raw.githubusercontent.com/jazzedd/JazradScript/refs/heads/main/Script"))()</div>
-            
-            <button class="btn" onclick="copyScript()">🚀 COPY SCRIPT NOW 🚀</button>
         </div>
 
-        <!-- FAQ Section -->
-        <section class="seo-section" style="margin-top: 50px;">
-            <h2>Frequently Asked Questions About Adopt Me Scripts</h2>
-            
-            <div class="faq-item">
-                <h3>What is the best Adopt Me script?</h3>
-                <p>Jazrad Script is widely considered one of the best Adopt Me scripts for 2026, offering comprehensive features including auto farm, instant hatching, mega neon creation, and scam protection. With over 85,000 users and a 96% success rate, it's a highly trusted option.</p>
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <div class="search-box">
+                    <input type="text" placeholder="Search mail" id="search-input" onkeyup="searchEmails()">
+                </div>
             </div>
-            
-            <div class="faq-item">
-                <h3>How do I use an Adopt Me script?</h3>
-                <p>Using Jazrad's Adopt Me script is simple: First, get a Roblox executor (like Synapse X, Script-Ware, or Krnl). Open Adopt Me in Roblox, then open your executor. Copy the Jazrad script code from this page, paste it into your executor, and click execute. The script GUI will appear in-game with all features ready to use.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h3>Is Jazrad Script safe to use?</h3>
-                <p>Yes! Jazrad Script is trusted by over 85,000 users and includes built-in safety features like scam protection and anti-ban measures. However, remember that using any script carries some risk. Always use scripts responsibly and never share your account information.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h3>Does the Adopt Me auto farm script work in 2026?</h3>
-                <p>Absolutely! Jazrad Script is regularly updated to work with the latest version of Adopt Me. Our auto farm feature works perfectly for gingerbread farming, minigame completion, and resource collection. The script is tested daily to ensure compatibility.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h3>What executors work with Jazrad Script?</h3>
-                <p>Jazrad Script is compatible with all major Roblox executors including Synapse X, Script-Ware, Krnl, Fluxus, Electron, and more. If you're using a reputable executor, Jazrad Script will work seamlessly.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h3>Can I get banned for using Adopt Me scripts?</h3>
-                <p>While Jazrad Script includes anti-detection features, using any script in Roblox goes against their Terms of Service and carries a risk of account suspension. We recommend using an alt account and always being cautious. Use scripts at your own discretion and risk.</p>
-            </div>
-        </section>
 
-        <!-- Additional SEO Content -->
-        <section class="seo-section">
-            <h2>Premium Adopt Me Script Features</h2>
-            <p><strong>Auto Farm Everything:</strong> Our Adopt Me auto farm script can automatically collect gingerbread, complete minigames, and gather resources while you're AFK. Set it up once and let Jazrad Script do all the work.</p>
-            <p><strong>Instant Actions:</strong> Skip the waiting with instant egg hatching and instant mega neon making. Turn your pets into mega neons in seconds instead of hours of grinding.</p>
-            <p><strong>Scam Protection:</strong> Built-in force trading protection keeps you safe from scammers. The script will automatically detect and block suspicious trade attempts.</p>
-            <p><strong>Regular Updates:</strong> We update Jazrad Script weekly to ensure compatibility with the latest Adopt Me updates. You'll always have access to working features.</p>
-        </section>
+            <div class="temp-email-section">
+                <div class="temp-email-display" id="temp-email">Generating...</div>
+                <button class="btn btn-secondary" onclick="copyEmail()">📋 Copy</button>
+                <button class="btn btn-primary" onclick="generateNewEmail()">🔄 New Email</button>
+                <span class="timer" id="timer">Expires in: <span id="countdown">10:00</span></span>
+            </div>
 
-        <footer>
-            <p>⚠️ Use responsibly | For educational purposes only</p>
-            <p>💜 Join thousands of satisfied users!</p>
-            <p>🏷️ Jazrad's Script © 2026 | Best Adopt Me Script | Roblox Scripts</p>
-        </footer>
+            <!-- Email List View -->
+            <div class="email-list" id="email-list-view">
+                <div class="empty-state">
+                    <div class="empty-state-icon">📭</div>
+                    <h3>No emails yet</h3>
+                    <p>Emails sent to your temporary address will appear here</p>
+                </div>
+            </div>
+
+            <!-- Email Detail View -->
+            <div class="email-view" id="email-detail-view">
+                <div class="email-view-header">
+                    <button class="back-btn" onclick="closeEmailView()">← Back to Inbox</button>
+                    <div class="email-view-subject" id="view-subject"></div>
+                    <div class="email-view-meta">
+                        <strong id="view-sender"></strong>
+                        <span>•</span>
+                        <span id="view-time"></span>
+                    </div>
+                </div>
+                <div class="email-view-body" id="view-body"></div>
+            </div>
+        </div>
     </div>
 
-    <div class="notification" id="notification">✓ COPIED! Ready to dominate Adopt Me! 🔥</div>
+    <!-- Compose Modal -->
+    <div class="modal" id="compose-modal">
+        <div class="compose-window">
+            <div class="compose-header">
+                <h3>New Message</h3>
+                <button class="close-btn" onclick="closeCompose()">×</button>
+            </div>
+            <div class="compose-body">
+                <div class="compose-field">
+                    <label>To:</label>
+                    <input type="email" id="compose-to" placeholder="recipient@example.com">
+                </div>
+                <div class="compose-field">
+                    <label>Subject:</label>
+                    <input type="text" id="compose-subject" placeholder="Subject">
+                </div>
+                <div class="compose-field">
+                    <label>Message:</label>
+                    <textarea id="compose-body" placeholder="Write your message here..."></textarea>
+                </div>
+            </div>
+            <div class="compose-footer">
+                <button class="send-btn" onclick="sendEmail()">Send</button>
+                <button class="btn btn-secondary" onclick="saveDraft()">Save Draft</button>
+            </div>
+        </div>
+    </div>
 
     <script>
-        // Create stars
-        const starsContainer = document.getElementById('stars');
-        
-        // Add twinkling stars
-        for (let i = 0; i < 100; i++) {
-            const star = document.createElement('div');
-            star.className = 'star';
-            star.style.left = Math.random() * 100 + '%';
-            star.style.top = Math.random() * 100 + '%';
-            star.style.animationDelay = Math.random() * 3 + 's';
-            starsContainer.appendChild(star);
+        // Data storage
+        let emails = {
+            inbox: [],
+            sent: [],
+            drafts: [],
+            trash: [],
+            spam: []
+        };
+
+        let currentView = 'inbox';
+        let currentEmail = null;
+        let tempEmail = '';
+        let expirationTime = 600; // 10 minutes in seconds
+        let timerInterval = null;
+
+        // Generate random temporary email
+        function generateTempEmail() {
+            const domains = ['tempmail.com', 'throwaway.email', 'guerrillamail.com', 'mailinator.com'];
+            const randomString = Math.random().toString(36).substring(2, 12);
+            const domain = domains[Math.floor(Math.random() * domains.length)];
+            return `${randomString}@${domain}`;
         }
 
-        // Add meteors
-        function createMeteor() {
-            const meteor = document.createElement('div');
-            meteor.className = 'meteor';
-            meteor.style.left = Math.random() * 100 + '%';
-            meteor.style.top = '-100px';
-            meteor.style.width = (Math.random() * 100 + 50) + 'px';
-            meteor.style.height = '2px';
-            meteor.style.animation = `meteor-fall ${Math.random() * 2 + 2}s linear`;
-            starsContainer.appendChild(meteor);
-
-            setTimeout(() => meteor.remove(), 4000);
+        // Initialize
+        function init() {
+            generateNewEmail();
+            loadSampleEmails();
+            renderEmails();
+            startTimer();
         }
 
-        setInterval(createMeteor, 3000);
-
-        // Add shooting stars
-        function createShootingStar() {
-            const shootingStar = document.createElement('div');
-            shootingStar.className = 'shooting-star';
-            shootingStar.style.left = Math.random() * 50 + 50 + '%';
-            shootingStar.style.top = Math.random() * 50 + '%';
-            shootingStar.style.width = (Math.random() * 150 + 100) + 'px';
-            shootingStar.style.animationDuration = (Math.random() * 1 + 1.5) + 's';
-            starsContainer.appendChild(shootingStar);
-
-            setTimeout(() => shootingStar.remove(), 3000);
+        // Generate new temporary email
+        function generateNewEmail() {
+            tempEmail = generateTempEmail();
+            document.getElementById('temp-email').textContent = tempEmail;
+            expirationTime = 600;
+            updateCountdown();
         }
 
-        setInterval(createShootingStar, 5000);
-
-        // Add floating particles
-        for (let i = 0; i < 30; i++) {
-            const particle = document.createElement('div');
-            particle.className = 'particle';
-            particle.style.left = Math.random() * 100 + '%';
-            particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
-            particle.style.animationDelay = Math.random() * 5 + 's';
-            starsContainer.appendChild(particle);
+        // Copy email to clipboard
+        function copyEmail() {
+            navigator.clipboard.writeText(tempEmail);
+            alert('Email copied to clipboard!');
         }
 
-        function copyScript() {
-            const codeElement = document.querySelector('.script-code');
-            const code = codeElement.textContent;
+        // Timer functions
+        function startTimer() {
+            if (timerInterval) clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                expirationTime--;
+                updateCountdown();
+                if (expirationTime <= 0) {
+                    generateNewEmail();
+                }
+            }, 1000);
+        }
 
-            navigator.clipboard.writeText(code).then(() => {
-                showNotification();
-            }).catch(err => {
-                console.error('Failed to copy:', err);
-                alert('Failed to copy. Please copy manually.');
+        function updateCountdown() {
+            const minutes = Math.floor(expirationTime / 60);
+            const seconds = expirationTime % 60;
+            document.getElementById('countdown').textContent = 
+                `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        }
+
+        // Load sample emails
+        function loadSampleEmails() {
+            emails.inbox = [
+                {
+                    id: 1,
+                    sender: 'newsletter@example.com',
+                    subject: 'Welcome to TempMail Pro!',
+                    body: 'Thank you for using TempMail Pro. Your temporary email is ready to use.',
+                    preview: 'Thank you for using TempMail Pro...',
+                    time: new Date().toISOString(),
+                    unread: true
+                },
+                {
+                    id: 2,
+                    sender: 'noreply@service.com',
+                    subject: 'Verify your account',
+                    body: 'Please click the link below to verify your account: https://example.com/verify',
+                    preview: 'Please click the link below to verify...',
+                    time: new Date(Date.now() - 3600000).toISOString(),
+                    unread: true
+                }
+            ];
+
+            emails.sent = [
+                {
+                    id: 3,
+                    sender: tempEmail,
+                    recipient: 'friend@example.com',
+                    subject: 'Test email',
+                    body: 'This is a test email from TempMail Pro.',
+                    preview: 'This is a test email...',
+                    time: new Date(Date.now() - 7200000).toISOString()
+                }
+            ];
+        }
+
+        // Switch view
+        function switchView(view) {
+            currentView = view;
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.classList.remove('active');
             });
+            document.querySelector(`[data-view="${view}"]`).classList.add('active');
+            closeEmailView();
+            renderEmails();
         }
 
-        function showNotification() {
-            const notification = document.getElementById('notification');
-            notification.classList.add('show');
-            
-            setTimeout(() => {
-                notification.classList.remove('show');
-            }, 3000);
+        // Render emails
+        function renderEmails() {
+            const listView = document.getElementById('email-list-view');
+            const emailsToShow = emails[currentView] || [];
+
+            if (emailsToShow.length === 0) {
+                listView.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-state-icon">📭</div>
+                        <h3>No emails in ${currentView}</h3>
+                        <p>This folder is empty</p>
+                    </div>
+                `;
+            } else {
+                listView.innerHTML = emailsToShow.map(email => `
+                    <div class="email-item ${email.unread ? 'unread' : ''}" onclick="openEmail(${email.id}, '${currentView}')">
+                        <input type="checkbox" class="email-checkbox" onclick="event.stopPropagation()">
+                        <div class="email-content">
+                            <div class="email-sender">${email.sender || email.recipient}</div>
+                            <div class="email-subject">${email.subject}</div>
+                            <div class="email-preview">${email.preview}</div>
+                        </div>
+                        <div class="email-time">${formatTime(email.time)}</div>
+                    </div>
+                `).join('');
+            }
+
+            updateCounts();
         }
+
+        // Update counts
+        function updateCounts() {
+            document.getElementById('inbox-count').textContent = emails.inbox.length;
+            document.getElementById('sent-count').textContent = emails.sent.length;
+            document.getElementById('drafts-count').textContent = emails.drafts.length;
+            document.getElementById('trash-count').textContent = emails.trash.length;
+            document.getElementById('spam-count').textContent = emails.spam.length;
+        }
+
+        // Format time
+        function formatTime(timeString) {
+            const date = new Date(timeString);
+            const now = new Date();
+            const diff = now - date;
+            const minutes = Math.floor(diff / 60000);
+            const hours = Math.floor(diff / 3600000);
+            const days = Math.floor(diff / 86400000);
+
+            if (minutes < 1) return 'Just now';
+            if (minutes < 60) return `${minutes}m ago`;
+            if (hours < 24) return `${hours}h ago`;
+            if (days < 7) return `${days}d ago`;
+            return date.toLocaleDateString();
+        }
+
+        // Open email
+        function openEmail(id, folder) {
+            const email = emails[folder].find(e => e.id === id);
+            if (!email) return;
+
+            email.unread = false;
+            currentEmail = email;
+
+            document.getElementById('view-subject').textContent = email.subject;
+            document.getElementById('view-sender').textContent = email.sender || email.recipient;
+            document.getElementById('view-time').textContent = new Date(email.time).toLocaleString();
+            document.getElementById('view-body').textContent = email.body;
+
+            document.getElementById('email-list-view').style.display = 'none';
+            document.getElementById('email-detail-view').classList.add('active');
+            renderEmails();
+        }
+
+        // Close email view
+        function closeEmailView() {
+            document.getElementById('email-list-view').style.display = 'block';
+            document.getElementById('email-detail-view').classList.remove('active');
+            currentEmail = null;
+        }
+
+        // Open compose
+        function openCompose() {
+            document.getElementById('compose-modal').classList.add('active');
+        }
+
+        // Close compose
+        function closeCompose() {
+            document.getElementById('compose-modal').classList.remove('active');
+            document.getElementById('compose-to').value = '';
+            document.getElementById('compose-subject').value = '';
+            document.getElementById('compose-body').value = '';
+        }
+
+        // Send email
+        function sendEmail() {
+            const to = document.getElementById('compose-to').value;
+            const subject = document.getElementById('compose-subject').value;
+            const body = document.getElementById('compose-body').value;
+
+            if (!to || !subject || !body) {
+                alert('Please fill in all fields');
+                return;
+            }
+
+            const newEmail = {
+                id: Date.now(),
+                sender: tempEmail,
+                recipient: to,
+                subject: subject,
+                body: body,
+                preview: body.substring(0, 100) + '...',
+                time: new Date().toISOString()
+            };
+
+            emails.sent.push(newEmail);
+            closeCompose();
+            alert('Email sent successfully!');
+            
+            if (currentView === 'sent') {
+                renderEmails();
+            }
+        }
+
+        // Save draft
+        function saveDraft() {
+            const to = document.getElementById('compose-to').value;
+            const subject = document.getElementById('compose-subject').value;
+            const body = document.getElementById('compose-body').value;
+
+            const draft = {
+                id: Date.now(),
+                recipient: to,
+                subject: subject || '(No subject)',
+                body: body,
+                preview: body.substring(0, 100) + '...',
+                time: new Date().toISOString()
+            };
+
+            emails.drafts.push(draft);
+            closeCompose();
+            alert('Draft saved!');
+            
+            if (currentView === 'drafts') {
+                renderEmails();
+            }
+        }
+
+        // Search emails
+        function searchEmails() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const listView = document.getElementById('email-list-view');
+            const emailsToShow = emails[currentView] || [];
+
+            if (!query) {
+                renderEmails();
+                return;
+            }
+
+            const filtered = emailsToShow.filter(email => 
+                (email.sender && email.sender.toLowerCase().includes(query)) ||
+                (email.recipient && email.recipient.toLowerCase().includes(query)) ||
+                email.subject.toLowerCase().includes(query) ||
+                email.body.toLowerCase().includes(query)
+            );
+
+            if (filtered.length === 0) {
+                listView.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-state-icon">🔍</div>
+                        <h3>No results found</h3>
+                        <p>Try different keywords</p>
+                    </div>
+                `;
+            } else {
+                listView.innerHTML = filtered.map(email => `
+                    <div class="email-item ${email.unread ? 'unread' : ''}" onclick="openEmail(${email.id}, '${currentView}')">
+                        <input type="checkbox" class="email-checkbox" onclick="event.stopPropagation()">
+                        <div class="email-content">
+                            <div class="email-sender">${email.sender || email.recipient}</div>
+                            <div class="email-subject">${email.subject}</div>
+                            <div class="email-preview">${email.preview}</div>
+                        </div>
+                        <div class="email-time">${formatTime(email.time)}</div>
+                    </div>
+                `).join('');
+            }
+        }
+
+        // Simulate receiving new emails
+        function simulateIncomingEmail() {
+            const senders = ['updates@social.com', 'promo@shop.com', 'alert@bank.com', 'info@news.com'];
+            const subjects = ['New message', 'Special offer', 'Account update', 'Breaking news'];
+            const bodies = [
+                'You have a new notification waiting for you.',
+                'Limited time offer - 50% off everything!',
+                'Your account settings have been updated.',
+                'Read the latest headlines from around the world.'
+            ];
+
+            setInterval(() => {
+                if (Math.random() > 0.7) { // 30% chance every interval
+                    const randomSender = senders[Math.floor(Math.random() * senders.length)];
+                    const randomSubject = subjects[Math.floor(Math.random() * subjects.length)];
+                    const randomBody = bodies[Math.floor(Math.random() * bodies.length)];
+
+                    const newEmail = {
+                        id: Date.now(),
+                        sender: randomSender,
+                        subject: randomSubject,
+                        body: randomBody,
+                        preview: randomBody.substring(0, 100) + '...',
+                        time: new Date().toISOString(),
+                        unread: true
+                    };
+
+                    emails.inbox.unshift(newEmail);
+                    
+                    if (currentView === 'inbox') {
+                        renderEmails();
+                    } else {
+                        updateCounts();
+                    }
+                }
+            }, 15000); // Check every 15 seconds
+        }
+
+        // Initialize app
+        init();
+        simulateIncomingEmail();
     </script>
 </body>
 </html>
